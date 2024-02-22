@@ -1,0 +1,20 @@
+{
+  "version": "2.0",
+  "app_name": "bhub-email-lambda",
+  "stages": {
+    "prod": {
+      "manage_iam_role": true,
+      "lambda_functions": {
+        "handle_sqs_message": {
+          "lambda_timeout": 30
+        }
+      },
+      "environment_variables": {
+        "EMAIL_HOST": "smtp.gmail.com",
+        "EMAIL_USER": "you@gmail.com",
+        "EMAIL_PASS": "your-app-password",
+        "EMAIL_PORT": "587"
+      }
+    }
+  }
+}

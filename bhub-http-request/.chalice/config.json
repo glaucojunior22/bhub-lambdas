@@ -1,0 +1,14 @@
+{
+  "version": "2.0",
+  "app_name": "bhub-http-lambda",
+  "stages": {
+    "prod": {
+      "manage_iam_role": true,
+      "lambda_functions": {
+        "handle_sqs_message": {
+          "lambda_timeout": 30
+        }
+      }
+    }
+  }
+}
