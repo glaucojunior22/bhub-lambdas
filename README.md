@@ -1,0 +1,5 @@
+# Bhub Challenge - Funções Lambda
+
+## O objetivo desse repositório é servir como um modelo para a criação de funções Lambda que apliquem as mais variadas regras de negócio que possam surgir ao longo do tempo, sem a necessidade de alterações no [projeto principal](https://github.com/glaucojunior22/bhub-challenge).
+
+## A ideia central é ter filas genéricas no SQS, onde funções Lambda possam processar as tarefas recebidas em cada fila aplicando regras especificadas pelos próprios usuários do sistema principal, por isso temos dois exemplos muito simples que poderiam ser aplicados em diversa regras diferentes, a requisição HTTP e o envio de E-mail, com o tempo podem ser criadas outras funções que resolvam as mais variadas regras de negócio e com o tempo essa criação deve ser cada vez menos necessária, uam vez que uma função Lambda mais genérica resolveria o problema de tarefas mais específicas.
